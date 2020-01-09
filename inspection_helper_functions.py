@@ -33,3 +33,5 @@ def dict_structure(json_data):
         for key in keys:
             print('{} - {}'.format(indent, key))
             scan(data[key], level + 1)
+
+    scan(json_data, 0)
